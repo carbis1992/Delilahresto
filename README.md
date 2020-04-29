@@ -1,2 +1,2 @@
 # "Delilah Resto" delivery de comida 
-Proyecto Delilah Resto - Acamica DWFS
+Proyecto 3 de Acamica - Desarollo web full stack
