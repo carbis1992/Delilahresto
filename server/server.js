@@ -325,7 +325,7 @@ server.put("/products/:id", validate_token, is_admin, async (req, res, next) => 
 		if (product_found) {
 			const { name, price, is_disabled } = req.body;
 			// Filters "", null or undefined props and puts remaining into new object
-			const filtered_props = filter_empty_props({ name, price, img_url, description, is_disabled });
+			const filtered_props = filter_empty_props({ name, price, is_disabled });
 			// Creates new object applying only the filtered Props over the previous ones
 			const updatedProduct = { ...product_found, ...filtered_props };
 			const update = await sequelize.query(
