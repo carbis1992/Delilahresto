@@ -15,7 +15,6 @@ CREATE TABLE delilah_resto.products (
   product_id INT PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR (60) NOT NULL,
   price FLOAT NOT NULL,
-  description VARCHAR(150) NOT NULL,
   is_disabled BOOLEAN DEFAULT FALSE
 );
 
